@@ -1,20 +1,6 @@
 <!DOCTYPE HTML>
 <!-- Editorial by HTML5 UP -->
 <html>
-<style>
-  .collapsible {
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    font-weight: bold;
-    cursor: pointer;
-    color: #444;
-  }
-  .collapsible-content {
-    display: none;
-    padding-left: 1em;
-  }
-</style>
 <head>
   <title>Amanda's Knowledge Library</title>
   <meta charset="utf-8" />
@@ -28,10 +14,15 @@
       font-weight: bold;
       cursor: pointer;
       color: #444;
+      padding: 0;
     }
+  
+    .collapsible:hover {
+      text-decoration: underline;
+    }
+  
     .collapsible-content {
-      display: none;
-      padding-left: 1em;
+      margin-left: 1em;
     }
  </style>
 </head>
@@ -87,7 +78,7 @@
               <button class="collapsible">Python ▼</button>
             </h2>
           </header>
-          <div class="content collapsible-content">
+          <div class="content collapsible-content" style="display: none;">
             <article>
               <h3>Pandas</h3>
               <p>Data manipulation and analysis.</p>
@@ -182,15 +173,18 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-  const coll = document.querySelectorAll(".collapsible");
-  coll.forEach(button => {
-    button.addEventListener("click", () => {
-      const content = button.closest("section").querySelector(".collapsible-content");
-      content.style.display = content.style.display === "block" ? "none" : "block";
-      button.textContent = content.style.display === "block" ? "Python ▲" : "Python ▼";
+    document.addEventListener("DOMContentLoaded", function () {
+      const coll = document.querySelectorAll(".collapsible");
+      coll.forEach(button => {
+        button.addEventListener("click", () => {
+          const content = button.closest("section").querySelector(".collapsible-content");
+          const isShown = content.style.display === "block";
+          content.style.display = isShown ? "none" : "block";
+          button.textContent = isShown ? "Python ▼" : "Python ▲";
+        });
+      });
     });
-  });
-</script>
+  </script>
 
 
 </body>
