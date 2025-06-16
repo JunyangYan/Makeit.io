@@ -1,6 +1,20 @@
 <!DOCTYPE HTML>
 <!-- Editorial by HTML5 UP -->
 <html>
+<style>
+  .collapsible {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #444;
+  }
+  .collapsible-content {
+    display: none;
+    padding-left: 1em;
+  }
+</style>
 <head>
   <title>Amanda's Knowledge Library</title>
   <meta charset="utf-8" />
@@ -55,23 +69,26 @@
         <!-- Section: Python -->
         <section>
           <header class="major">
-            <h2>Python</h2>
+            <h2>
+              <button class="collapsible">Python ▼</button>
+            </h2>
           </header>
-          <div class="posts">
+          <div class="content collapsible-content">
             <article>
               <h3>Pandas</h3>
-              <p>Data manipulation, transformation, and analysis with Pandas.</p>
+              <p>Data manipulation and analysis.</p>
             </article>
             <article>
-              <h3>Numpy</h3>
-              <p>Array programming and matrix operations with NumPy.</p>
+              <h3>NumPy</h3>
+              <p>Powerful array programming and numerical computation.</p>
             </article>
             <article>
               <h3>Visualization</h3>
-              <p>Using Matplotlib, Seaborn and Plotly for data viz.</p>
+              <p>Charts and plots with Matplotlib, Seaborn, Plotly.</p>
             </article>
           </div>
         </section>
+
 
         <!-- Section: Algorithm -->
         <section>
@@ -149,6 +166,18 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <script>
+  const coll = document.querySelectorAll(".collapsible");
+  coll.forEach(button => {
+    button.addEventListener("click", () => {
+      const content = button.closest("section").querySelector(".collapsible-content");
+      content.style.display = content.style.display === "block" ? "none" : "block";
+      button.textContent = content.style.display === "block" ? "Python ▲" : "Python ▼";
+    });
+  });
+</script>
+
 
 </body>
 </html>
