@@ -103,3 +103,10 @@ What is the expected total number of handshakes?
 
 里面是逻辑智商测试，总共50题，有很多类型的题，有些是数学题，比如鸡兔同笼那种，然后还有那种给四个图形，问你第五个图形是什么，给你一串数字，问你下一个数字是什么，给你几个英文字符串，问你下一个字符串是什么，还有英语阅读理解完形填空，要填符合上下文的单词，我真的无语了
 
+
+https://blog.csdn.net/m0_59082437/article/details/145499179#211_Screwy_pirates__25
+https://blog.csdn.net/m0_59082437/article/details/145499179
+https://blog.csdn.net/linshen1213/article/details/125060129
+
+
+
