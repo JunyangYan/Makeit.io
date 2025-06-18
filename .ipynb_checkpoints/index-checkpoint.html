@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<!-- Editorial by HTML5 UP -->
+<html>
+  <head>
+    <title>Panda's Library</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+  
+    <!-- Wrapper -->
+    <div id="wrapper">
+  
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+  
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo"><strong>Panda</strong> Library </a>
+          </header>
+
+          <!-- Banner -->
+          <section id="banner">
+            <div class="content">
+              <header>
+                <h1>Hi, I’m Panda's<br />
+                Library</h1>
+                <p>A curated site of notes, concepts, and interview prep</p>
+              </header>
+              <p>Make a summary later</p>
+              <ul class="actions">
+                <li><a href="#" class="button big">Learn More</a></li>
+              </ul>
+            </div>
+            <span class="image object">
+              <img src="images/pic10.jpg" alt="" />
+            </span>
+          </section>
+  
+          <!-- Section: Behavioral -->
+          <section>
+            <header class="major">
+              <h2>Behavior Questions</h2>
+            </header>
+            <div class="posts">
+              <article>
+                <h3>Self Introduction</h3>
+                <p>Tips and scripts for telling your story in interviews.</p>
+              </article>
+              <article>
+                <h3>Why Switch</h3>
+                <p>Crafting a compelling reason to transition careers.</p>
+              </article>
+            </div>
+          </section>
+  
+          <!-- Section: Financial Concept -->
+          <section>
+            <header class="major">
+              <h2>Financial Concept</h2>
+            </header>
+            <div class="posts">
+              <article>
+                <h3>Market Making</h3>
+                <p>Understanding how market makers operate and profit.</p>
+              </article>
+            </div>
+          </section>
+  
+          <!-- Section: Python -->
+          <section>
+            <header class="major">
+              <h2>
+                <button class="collapsible">Python ▼</button>
+              </h2>
+            </header>
+            <div class="content collapsible-content" style="display: none;">
+              <article>
+                <h3>Pandas</h3>
+                <p>Data manipulation and analysis.</p>
+              </article>
+              <article>
+                <h3>NumPy</h3>
+                <p>Powerful array programming and numerical computation.</p>
+              </article>
+              <article>
+                <h3>Visualization</h3>
+                <p>Charts and plots with Matplotlib, Seaborn, Plotly.</p>
+              </article>
+            </div>
+          </section>
+  
+  
+          <!-- Section: Algorithm -->
+          <section>
+            <header class="major">
+              <h2>Algorithm</h2>
+            </header>
+            <p>Classic problems and patterns from interviews and LeetCode.</p>
+          </section>
+  
+          <!-- Section: SQL -->
+          <section>
+            <header class="major">
+              <h2>SQL</h2>
+            </header>
+            <p>Queries, window functions, joins, CTEs and performance tips.</p>
+          </section>
+  
+          <!-- Section: Statistics -->
+          <section>
+            <header class="major">
+              <h2>Statistics</h2>
+            </header>
+            <p>Hypothesis testing, distributions, and regression concepts.</p>
+          </section>
+  
+          <!-- Section: Brain Teasers -->
+          <section>
+            <header class="major">
+              <h2>Brain Teasers</h2>
+            </header>
+            <p>Fun and tricky puzzles often asked in quant interviews.</p>
+          </section>
+  
+          <!-- Section: Probability -->
+          <section>
+            <header class="major">
+              <h2>Probability</h2>
+            </header>
+            <p>Fundamentals and applied problems in probability theory.</p>
+          </section>
+  
+        </div>
+      </div>
+  
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+  
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Sections</h2>
+            </header>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Behavior</a></li>
+              <li><a href="#">Finance</a></li>
+              <li>
+                <span class="opener">Python</span>
+                <ul>
+                  <li><a href="#">Pandas</a></li>
+                  <li><a href="#">Numpy</a></li>
+                  <li><a href="#">Visualization</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Algorithms</a></li>
+              <li><a href="#">SQL</a></li>
+              <li><a href="#">Statistics</a></li>
+              <li><a href="#">Brain Teasers</a></li>
+              <li><a href="#">Probability</a></li>
+            </ul>
+          </nav>
+  
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const coll = document.querySelectorAll(".collapsible");
+        coll.forEach(button => {
+          button.addEventListener("click", () => {
+            const content = button.closest("section").querySelector(".collapsible-content");
+            const isShown = content.style.display === "block";
+            content.style.display = isShown ? "none" : "block";
+            button.textContent = isShown ? "Python ▼" : "Python ▲";
+          });
+        });
+      });
+    </script>
+  
+  
+  </body>
+</html>
